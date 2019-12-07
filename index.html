@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Internal stylesheet import -->
+    <link rel="stylesheet" href="main.css">
+    <!-- External Script -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/sankey.js"></script>
+    <script src="https://code.highcharts.com/modules/dependency-wheel.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    
+    <table class="simpleTable" border="2">
+            <tr>
+              <td width="8%"><img src="download.jpg" alt="Exports logo" class="pageLogo"/></td>
+              <td width="75%"><h1 align = 'center' style="font-size: 200%;">How do Exports Around the Globe Compare in 2018?</h1></td> </tr>
+          </table>
+      
+          <!-- Chart Placement Table -->
+          <table class="simpleTable greaterArea"><tr>
+              <td rowspan="2" >
+                  <div id="container"></div>
+                  <p>USA and China are major exporters of goods. <br>
+                    China's biggest customer is the USA, no surprise there! <br>
+                    Mexico's biggest customer is the USA as well. USA just consumes a buttload. <br>
+                     Germany tends to keeps its exports geographically close to itself. <br>
+                </p>
+                </td>
+              <td rowspan="2" >        
+                    <p>Please select a country to compare with the USA:</p>
+                    <button id="MEX">MEXICO</button>
+                    <button id="CAN">CANADA</button>
+                    <button id="CHN">CHINA</button>
+                    <button id="JPN">JAPAN</button>
+                    <button id="GER">GERMANY</button>
+                    <button id="KOR">SOUTH KOREA</button>
+                    <button id="GBR">GREAT BRITAN</button>
+                <div id="container1"></div>
+            </td>
+            </tr>
+          </table>
+
+          <table class="simpleTable greaterArea"><tr>
+              <td rowspan="2" >        
+              <div id="container2"></div>
+            </p> Prior to 2018, USA was the country exporting the most.<br>
+                China's economy has been booming in recent years.<br>
+                All the countries show an overall increasing trend for exports over the years. <br>
+                China and USA have very similar trends because they are each other's biggest customers. <br>
+                Japan and Germany have similar trends despite the fact that they don't trade with each other.
+      </p>
+          </td>
+                
+                <td rowspan="2" ><div id="container3"></div>
+                </p> USA and China together comprise ~50% of exports amongst the top exporting countries. <br>
+                    China's economy made significant improvements in 2018. USA was the leading exporter prior to 2018.<br>
+                    Germany and Japan make up ~25%  of exports. <br>
+                    South Korea, United Kingdom, Mexico and Canada's exports are the remaining ~25%.
+              </p>
+                
+                </td>      
+              </td>
+              </tr>
+            </table>
+      
+  </head>
+  <body>
+
+
+    <!-- Internal JS Import -->
+    <script src="main.js"></script>
+    
+  </body>
+</html>
